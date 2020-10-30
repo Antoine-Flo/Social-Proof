@@ -1,0 +1,178 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Spartan', sans-serif;
+}
+
+.back1 {
+    width: 80%;
+    position: absolute;
+    bottom: -135px;
+    right: 0;
+}
+
+.back2 {
+    width: 50%;
+    position: absolute;
+    color: red;
+    top: 0;
+    left: 0;
+}
+
+
+.container {
+    max-width: 1700px;
+    height: 800px;
+    margin: 5rem;
+    padding: 6rem;
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    font-size: 2rem;
+}
+
+/********* HEADER **********/
+
+.header {
+    margin: 2rem 8rem;
+    margin-bottom: 7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 6rem;
+    width: 50rem;
+    color: hsl(300, 43%, 22%);
+}
+
+.intro {
+    margin-top: 2rem;
+    width: 62rem;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    line-height: 3rem;
+}
+
+/********* RATINGS **********/
+
+
+.ratings-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.rating {
+    background-color: hsl(300, 24%, 96%);
+    margin: 1rem;
+    padding: 1.7rem 4rem;
+    border-radius: 10px;
+    width: 56rem;
+    height: 7rem;
+    display: flex;
+}
+
+.rating-1 {
+    transform: translateX(-16rem);
+}
+
+.rating-2 {
+    transform: translateX(-8rem);
+}
+
+.stars-container {
+    display: inline-block;
+    align-self: center;
+}
+
+.star {
+    width: 2rem;
+}
+
+.rating-comment {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 0 auto;
+    align-self: center;
+}
+
+
+
+
+/********* CARDS **********/
+
+.cards {
+    margin: 2rem 6rem;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    color: hsl(300, 24%, 96%);
+    margin: 2rem;
+    padding: 2rem;
+    background-color: hsl(300, 43%, 22%);
+    height: 28rem;
+
+    border-radius: 10px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+.card1 {
+    margin-top: -1px;
+}
+
+.card3 {
+    margin-top: 37px;
+}
+
+.profile {
+    display: flex;
+}
+
+.name {
+    display: block;
+}
+
+.img {
+    width: 6rem;
+    clip-path: circle(50% at 50% 50%);
+    margin: 1.5rem;
+}
+
+.name {
+    font-weight: 700;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    align-self: center;
+}
+
+.verified {
+    color: hsl(333, 80%, 67%);
+    opacity: .8;
+    font-weight: 400;
+}
+
+.comment {
+    opacity: .8;
+    color: hsl(300, 24%, 96%);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    padding: 1.9rem;
+}
