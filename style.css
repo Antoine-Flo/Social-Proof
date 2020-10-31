@@ -34,10 +34,10 @@ html {
 .container {
     max-width: 1700px;
     height: 800px;
-    margin: 5rem;
+    margin: 5rem auto;
     padding: 6rem;
-    display: grid;
-    grid-template-rows: 1fr, 1fr;
+    /* display: grid; */
+    /* grid-template-rows: 1fr, 1fr; */
     font-size: 2rem;
 }
 
@@ -48,6 +48,11 @@ html {
     margin-bottom: 7rem;
     display: flex;
     justify-content: space-between;
+
+}
+
+.title {
+    display: block;
 }
 
 h1 {
@@ -176,3 +181,36 @@ h1 {
     line-height: 3rem;
     padding: 1.9rem;
 }
+
+@media (max-width: 1648px) {
+    html {
+        font-size: 52%;
+    }
+
+
+    .rating {
+        width: 50rem;
+
+    }
+
+    .rating-1 {
+        transform: translateX(0);
+    }
+
+    .rating-2 {
+        transform: translateX(0);
+    }
+
+}
+
+@media (max-width: 1400px) {
+    html {
+        font-size: 50%;
+    }
+
+    .card {
+        height: 30rem;
+    }
+}
+
+@media (max-width: 986px) {}
