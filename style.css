@@ -193,11 +193,11 @@ h1 {
     }
 
     .rating-1 {
-        transform: translateX(0);
+        transform: translateX(-10em);
     }
 
     .rating-2 {
-        transform: translateX(0);
+        transform: translateX(-5em);
     }
 
 }
@@ -216,6 +216,14 @@ h1 {
 @media (max-width: 986px) {
     html {
         font-size: 40%;
+    }
+
+    .rating-1 {
+        transform: translateX(0);
+    }
+
+    .rating-2 {
+        transform: translateX(0);
     }
 
     .header {
