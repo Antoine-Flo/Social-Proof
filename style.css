@@ -83,17 +83,17 @@ h1 {
     margin: 1rem;
     padding: 1.7rem 4rem;
     border-radius: 10px;
-    width: 56rem;
+    width: 100%;
     height: 7rem;
     display: flex;
 }
 
 .rating-1 {
-    transform: translateX(-16rem);
+    transform: translateX(-16em);
 }
 
 .rating-2 {
-    transform: translateX(-8rem);
+    transform: translateX(-8vw);
 }
 
 .stars-container {
@@ -130,11 +130,12 @@ h1 {
     margin: 2rem;
     padding: 2rem;
     background-color: hsl(300, 43%, 22%);
-    height: 28rem;
 
     border-radius: 10px;
     line-height: 1.8rem;
     font-size: 1rem;
+
+    align-self: start;
 }
 
 .card1 {
@@ -154,9 +155,9 @@ h1 {
 }
 
 .img {
-    width: 6rem;
+    height: 5em;
     clip-path: circle(50% at 50% 50%);
-    margin: 1.5rem;
+    margin: 1.5em;
 }
 
 .name {
@@ -187,10 +188,8 @@ h1 {
         font-size: 52%;
     }
 
-
     .rating {
         width: 50rem;
-
     }
 
     .rating-1 {
@@ -209,8 +208,76 @@ h1 {
     }
 
     .card {
-        height: 30rem;
+        align-self: start;
+        flex-direction: column;
     }
 }
 
-@media (max-width: 986px) {}
+@media (max-width: 986px) {
+    html {
+        font-size: 40%;
+    }
+
+    .header {
+        max-width: 65rem;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .title {
+        margin: 0 auto;
+    }
+
+    .ratings-container {
+        margin: 20px auto;
+    }
+
+    .rating-comment {
+        margin-left: 10px;
+    }
+
+    h1 {
+        margin: 0 auto;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .cards {
+        margin: 0 auto;
+        max-width: 65rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card1 {
+        margin-top: 0;
+    }
+
+    .card3 {
+        margin-top: 12px;
+    }
+
+    .rating {
+        width: auto;
+    }
+
+    .star {
+        width: 1.5rem;
+    }
+
+}
+
+@media (max-width: 444px) {
+
+    .container {
+        margin: 1rem auto;
+        padding: 4rem;
+    }
+
+    html {
+        font-size: 37%;
+    }
+}
